@@ -63,7 +63,7 @@
 
             <?php
             
-                $bdd = new PDO('mysql:host=localhost;dbname=vigilille;charset=utf8;', 'nolan', 'Nolan0112!');
+                $bdd = new PDO('mysql:host=localhost;dbname=vigilille;charset=utf8;', 'root', 'vigilille');
 
                 $req = $bdd->prepare("SELECT Id_Urbanisme,Titre,Descrip,NumeroDeRue,NomDeRue,NbPoint,Par FROM urbanisme");
 

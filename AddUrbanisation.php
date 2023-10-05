@@ -4,6 +4,7 @@
 	
 	$Titre = $_POST["title"];
 	$Descrip = $_POST["description"];
+    $Descrip = addslashes($Descrip); // Échapper les apostrophes dans la description
     $NumeroDeRue = $_POST["street-number"];
 	$NomDeRue = $_POST["street-name"];
 
@@ -13,7 +14,7 @@
     $id_users=$_SESSION['id'];
     $prenom=$_SESSION['prenom'];
 
-    $bdd = new PDO('mysql:host=localhost;dbname=vigilille;charset=utf8;', 'nolan', 'Nolan0112!');
+    $bdd = new PDO('mysql:host=localhost;dbname=vigilille;charset=utf8;', 'root', 'vigilille');
 
     $req = $bdd->prepare("INSERT INTO urbanisme(Titre,Descrip,NumeroDeRue,NomDeRue,NbPoint,Par) VALUES ('$Titre','$Descrip','$NumeroDeRue','$NomDeRue','3','$prenom')");
 

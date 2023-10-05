@@ -12,7 +12,7 @@
             $admin = 2;
             $users = 1;
 
-            $bdd = new PDO('mysql:host=localhost; dbname=vigilille;charset=utf8;', 'nolan', 'Nolan0112!');
+            $bdd = new PDO('mysql:host=localhost;dbname=vigilille;charset=utf8;', 'root', 'vigilille');
             
             if(!empty($_POST['login']) AND !empty($_POST['pass'])){
                 $login = $_POST['login'];
@@ -72,23 +72,23 @@
             </form>
         </div>
 
-            <p class="text_accueil">
-                <span class="Vigilille">VigiLille</span> vise à renforcer la communauté en permettant aux citoyens de signaler des problèmes, de demander de l'aide, et de récompenser la contribution citoyenne en encourageant les achats dans les petits commerces de la région. Cela favorise un sentiment d'appartenance à la communauté et un meilleur environnement urbain.<br><br>
-            
-                Urbanisme - Cette section permet aux citoyens de signaler des problèmes liés à l'urbanisme tels que des nids-de-poule, des routes encombrées, des fuites d'eau, des ampoules défectueuses, etc.<br><br>
-                
-                Entraide Citoyenne - Cette catégorie facilite la demande et la fourniture d'aide citoyenne. Les services incluent du pet-sitting, des courses pour les personnes à mobilité réduite, le prêt de matériel, et bien plus encore.<br><br>
-                
-                Comment fonctionne <span class="Vigilille">VigiLille</span> ?</br><br>
-                
-                Signalement des problèmes d'ordre citoyen : Les citoyens peuvent utiliser le site pour signaler divers problèmes urbains, ce qui contribue à améliorer la qualité de vie dans la ville.<br><br>
-                
-                Demande d'aide citoyenne : Les citoyens peuvent solliciter de l'aide pour des tâches diverses, favorisant la solidarité entre les habitants de la région.<br><br>
-                
-                Système de points : Chaque citoyen se voit attribuer des points en fonction de l'aide citoyenne qu'il apporte. Ces points peuvent être utilisés pour obtenir des bons de réduction valables dans les petits commerces locaux.<br><br>
-                
-                Nous avons comme volonté de rapprocher les citoyens et permettre à la ville d’être plus belle et moins endommagée.
-           </p>
+        <p class="text_accueil">
+            <span class="Vigilille">VigiLille</span> s'engage à renforcer notre communauté en offrant aux citoyens la possibilité de signaler des problèmes, de demander de l'aide, et de récompenser leur contribution citoyenne en encourageant les achats dans les petits commerces locaux. Cette initiative vise à créer un sentiment d'appartenance à la communauté tout en améliorant notre environnement urbain.<br><br>
+
+            **Urbanisme** : Cette section permet aux citoyens de signaler divers problèmes liés à l'urbanisme, tels que des nids-de-poule, des routes encombrées, des fuites d'eau, des ampoules défectueuses, etc.<br><br>
+
+            **Entraide Citoyenne** : Cette catégorie facilite la demande et la fourniture d'aide entre citoyens. Les services incluent le pet-sitting, les courses pour les personnes à mobilité réduite, le prêt de matériel, et bien plus encore.<br><br>
+
+            **Comment fonctionne VigiLille ?**<br><br>
+
+            - **Signalement des problèmes citoyens** : Les citoyens peuvent utiliser notre site pour signaler divers problèmes urbains, contribuant ainsi à améliorer la qualité de vie dans notre ville.<br><br>
+
+            - **Demande d'aide citoyenne** : Les citoyens peuvent solliciter de l'aide pour diverses tâches, renforçant ainsi la solidarité entre les habitants de notre région.<br><br>
+
+            - **Système de points** : Chaque citoyen se voit attribuer des points en fonction de l'aide citoyenne qu'il apporte. Ces points peuvent être échangés contre des bons de réduction valables chez nos petits commerces locaux partenaires.<br><br>
+
+            Notre objectif est de rapprocher les citoyens, de contribuer à l'embellissement de notre ville et de la maintenir en bon état.
+        </p>
         </main>
 
         <footer>
